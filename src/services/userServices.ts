@@ -1,5 +1,5 @@
 import * as userRepository from "../repositories/userRepository";
-import { encryptMasterPassword } from "../../utils/encryptServices";
+import { encryptMasterPassword } from "../utils/encryptServices";
 import * as type from "../types/types";
 
 async function createUserData(userData: type.CreateAndLoginUser) {
