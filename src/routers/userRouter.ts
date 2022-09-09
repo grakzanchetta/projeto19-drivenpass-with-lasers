@@ -8,6 +8,7 @@ const userRouter = Router();
 userRouter.post(
   "/signup",
   validateSchema(userCreationAndLoginSchema),
+  userController.createUser,
   userController.createUser
 );
 
