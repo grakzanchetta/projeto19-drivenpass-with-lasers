@@ -13,13 +13,13 @@ async function validateSignUp(userData: type.CreateAndLoginUser) {
   if (userExists) {
     throw {
       type: "conflict",
-      message: "email already registered. try another",
+      message: "email already registered.",
     };
   }
   if (userData.password.length < 10) {
     throw {
       type: "bad_request",
-      message: "password must be 10 characters long, at least",
+      message: "password must have more than 10 characters",
     };
   }
   return userData;
