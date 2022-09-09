@@ -1,0 +1,50 @@
+{
+  "name": "projeto19-drivenpass-with-lasers",
+  "version": "1.0.0",
+  "description": "Projeto 19 do Bootcamp Driven - Refatorado",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc && npx prisma generate && npx prisma migrate deploy",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grakzanchetta/projeto19-drivenpass-with-lasers.git"
+  },
+  "keywords": [
+    "Prisma",
+    "Typescript"
+  ],
+  "author": "Gabriel Rak Zanchetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grakzanchetta/projeto19-drivenpass-with-lasers/issues"
+  },
+  "homepage": "https://github.com/grakzanchetta/projeto19-drivenpass-with-lasers#readme",
+  "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.3",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/cryptr": "^4.0.1",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.7.16",
+    "@types/pg": "^8.6.5",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
